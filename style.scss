@@ -1,0 +1,104 @@
+$bgnavcolor:#333;
+$textnavcolor:#f2f2f2;
+$fontfamnav:'Roboto', sans-serif;
+$hovercolor:#7f7f7f;
+$fontfammid:'Open Sans Condensed', sans-serif;
+$textartcolor:#08c;
+$textfootcolor:#666;
+
+.navbar{
+    height:46px;
+    color:$textnavcolor;
+    background: $bgnavcolor;
+    font:{
+        size:16px;
+        family: $fontfamnav;
+        weight:bold;
+    }
+}
+
+.col-1 {
+    color:$textnavcolor;
+    &:hover{
+        color:$hovercolor;
+        text-decoration: none;
+    }
+}
+main {
+    height:640px;
+}
+.top {
+    width:209px;
+    height:76px;
+    background-image: url(images/ipadair_logo_large.png);
+    margin:120px auto 0px auto;
+}
+
+.mid {
+    width:auto;
+    height:auto;
+    font:{
+        size:40px;
+        family:$fontfammid;
+    }
+}
+
+.pic{
+    margin-top:100px;
+}
+
+article{
+    font:{
+        size:32px;
+        family:$fontfammid;
+    }
+    color:$textartcolor;
+}
+
+.bot{
+    width:100%;
+    height:100px;
+    text-align: center;
+}
+
+section a article{
+    margin-left:36%;
+    &:hover {
+        color:black;
+    }
+}
+
+aside{
+    width:24%;
+    height:200px;
+    margin-top:50px;
+}
+
+.img2, .img3 {
+    margin-left:1.33333%;
+}
+
+@for $a from 1 through 4 {
+    .img#{$a}{
+        background-image:url(images/img-#{$a}.jpg);
+        background-position: center;
+    }
+}
+
+footer{
+    font:{
+        size:11px;
+        family: Arial;
+    }
+    line-height: 12px;
+    color:$textfootcolor;
+    a {
+        color:$textfootcolor;
+        &:hover {
+            text-decoration: underline;
+            color:#333;
+        }
+    }
+}
+
+
